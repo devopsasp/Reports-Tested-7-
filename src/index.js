@@ -176,8 +176,6 @@ root.render(
     <br></br>
     <br></br>
     <br></br>
-    <br></br>
-    <br></br>
 
     <Routes>
       <Route path="/" element={<App />}>

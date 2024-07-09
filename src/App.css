@@ -1,5 +1,29 @@
+.three-d-background {
+  position: relative;
+  width: 1900px;
+  height: 1900px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.three-d-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(
+    45deg,
+    #e66465,
+    #9198e5
+  ); /* Gradient background */
+  transform: rotateY(45deg) translateZ(-100px);
+  z-index: -1;
+}
+
 .App {
   text-align: center;
+  background: linear-gradient(45deg, #e66465, #9198e5);
 }
 
 .App-logo {
@@ -36,6 +60,3 @@
     transform: rotate(360deg);
   }
 }
-
-
-
